@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="repair.css">
+	<link rel="shortcut icon" href="../images/favicon.png">
+	<title>Excel gadgets</title>
+</head>
+<body>
+	<div>
+		<div class="logo">
+			<img src="../images/xcel.png" alt="eXcel-logo" width="20%">	
+	</div>
+		<div class="navbar">
+			<ul>
+				<a href="../index.html">Home</a>
+			</ul>
+			<ul>
+				<a href="../about.html">About Us</a>	
+			</ul>
+			<ul>
+				<a href="../services.html">
+				Repairs & Upgrades</a>
+			</ul>
+			<ul>
+				<a href="../contact.html">Contact us</a>	
+			</ul>
+		</div>
+	</div>
+	<div class="help">
+		<div class="help-content">
+		<h1>we can help!</h1>
+		<div>Need help upgrading your<mark>software?</mark>
+			<br>
+			Check out our<mark>computer section</mark>
+			<br>
+			or 
+			contact us now to<mark>schedule a servicing</mark>
+		</div>
+	<button class="book-us">book an appointment</button>
+		</div>
+	</div>
+	<div class="services">
+		<div class="grid-item">
+			<img src="../images/phones.webp">
+			<h1>mobile devices<br></h1>
+				<p>We provide full repair services for all kinds of phones. It's time to upgrade your phone- don't worry about breaking your old one!, we offer trade-ins for newer phones or cash for your old device. Go for the latest model without any guilt!</p>
+		</div>
+		<div class="grid-item">
+			<img src="../images/laptops.webp">
+			<h1>laptops<br></h1>
+				<p>Busted laptop? Don't worry- we can get it fixed up in no time, save money and time with our affordable, fast and experienced repair technicians. We also offer upgrades and maintenance services to keep your laptop running smoothly.</p>
+		</div>
+		<div class="grid-item">
+			<img src="../images/pcs.webp">
+			<h1>personal computers<br></h1>
+				<p>Running slow?
+Frustrated with tech issues?<br>
+Whether you're a gamer, a student, or a business owner, we can help you get your computer back up and running. Don't let a faulty PC hold you back,
+book your appointment today and get back to what you enjoy doing most.</p>
+		</div>
+	</div>
+	<footer>
+			<ul>
+				<a href="../index.html">Home</a>
+			</ul>
+			<ul>
+				<a href="../about.html">About Us</a>
+			</ul>
+			<ul>
+				<a href="../services.html">
+				Repairs & Upgrades</a>
+			</ul>
+			<ul>
+				<a href="../bookus.html">book online</a>
+			</ul>
+			<div class="copyright">&copy;
+		<script>
+		 document.write(new Date().getFullYear())
+		</script> by <mark class="devName">Kennery</mark>
+	
+	</div>
+		</footer>
+	<script src="repair.js"></script>/
+	<script>
+  let images = ['../images/broken.jpg', '../images/brokene.jpg'];
+  let index = 0;
+
+  setInterval(function() {
+    document.querySelector('.help').style.backgroundImage = `url(${images[index]})`;
+    index = (index + 1) % images.length;
+  }, 8000);
+</script>
+</body>
+</html>
